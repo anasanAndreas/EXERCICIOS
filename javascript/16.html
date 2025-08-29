@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 16 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var numero = window.prompt("Digite um número:");
+
+function primo(numero){
+  var divisores=0;
+
+  for(var count=1 ; count<=numero ; count++)
+   if(numero % count == 0)
+   	divisores++;
+
+    if(divisores==2) {
+  	 return true;
+      }  else {
+  	return false;
+      }
+}
+
+if (primo(numero)) {
+  document.write("O número é primo.");
+} else {
+  document.write("O número não é primo.");
+}
+</script>
+</body>
+
+</html>

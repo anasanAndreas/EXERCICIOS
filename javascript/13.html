@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 13 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var num1 = window.prompt("Digite o primeiro número:","Insira o número aqui");
+var num2 = window.prompt("Digite o segundo número:","Insira o número aqui");
+
+function calcularMDC (num1, num2) {
+var resto;
+do {
+    resto = num1 % num2;
+    num1 = num2;
+    num2 = resto;
+} while (resto != 0);
+return num1;
+}
+
+var resultado = calcularMDC(num1, num2);
+document.write ("O MDC (máximo divisor comum) de "+num1+" e "+num2+" é "+resultado)
+</script>
+</body>
+</html>

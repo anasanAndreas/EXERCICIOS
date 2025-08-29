@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 8 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var ano=window.prompt("Digite um ano para checar se é bissexto ","Insira aqui o ano");
+
+if (ano%400==0) 
+  document.write ("É bissexto.");
+else if (ano%4==0 && ano%100!=0) 
+  document.write ("É bissexto.");
+else {
+  document.write ("Não é bissexto.");
+}
+
+</script>
+</body>
+</html>

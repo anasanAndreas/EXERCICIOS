@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 14 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var n;
+var soma = 0;
+    
+  do {
+    n = parseInt(window.prompt("Insira o valor do produto. Quando desejar finalizar a inserção, digite 0."));
+    soma += n;
+  } while (n !== 0);
+    
+var d = parseInt(window.prompt("Possui algum desconto? Se sim, digite o valor. Se não, digite 0."));
+var a = parseInt(window.prompt("Possui algum acréscimo? Se sim, digite o valor. Se não, digite 0."));
+    
+var total = soma;
+var totald = soma-d;
+var totala = soma+a;
+
+document.write("O valor da sua compra total é: "+total);
+
+if (d !== 0) {
+  document.write("<br>Valor com desconto aplicado: "+totald);
+}
+
+if (a !== 0) {
+  document.write("<br>Valor com acréscimo aplicado: "+totala);
+}
+</script>
+</body>
+</html>

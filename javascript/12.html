@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 12 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var n = window.prompt("Digite um número:");
+
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+document.write ("O número "+n+" na sequência de Fibonacci resulta em "+fibonacci(n))
+</script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> exercício 11 </title>
+<style type="text/css">
+    body{background-color: #000;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(47, 197, 41);}
+</style>
+</head>
+
+<body>
+<script>
+var palavra = window.prompt("Digite uma palavra:");
+
+function palindromo(palavra) {
+  var a = palavra.toLowerCase().replace(/\s/g, '');
+  var r = a.split('').reverse().join('');
+  if (a === r) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+if (palindromo(palavra)) {
+  document.write("A palavra é um palíndromo.");
+} else {
+  document.write("A palavra não é um palíndromo.");
+}
+</script>
+</body>
+
+</html>
